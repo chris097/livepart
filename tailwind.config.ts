@@ -29,7 +29,10 @@ const config: Config = {
       "blue.100": "rgba(85, 196, 241, 1)",
       "green.200": "rgba(0, 166, 153, 1)",
       "green.300": "rgba(0, 138, 128, 1)",
-      "red.200": "#FA4354"
+      "red.200": "#FA4354",
+      "grey.200": "#B4BECB",
+      "grey.300": "#1B1C20",
+      "green.400": "#00A699"
     },
     fontFamily: {
       mattersq: "Matter SQ Regular",
