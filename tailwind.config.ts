@@ -33,7 +33,10 @@ const config: Config = {
       "grey.200": "#B4BECB",
       "grey.300": "#1B1C20",
       "green.400": "#00A699",
-      "red.300": "#FE4365"
+      "red.300": "#FE4365",
+      "grey.400": "#343F4B",
+      "grey.500": "#222428",
+      "grey.600": "#63768D"
     },
     fontFamily: {
       mattersq: "Matter SQ Regular",
