@@ -37,7 +37,7 @@ const AccordionItem: React.FC<IFaqProps> = ({ title, description }) => {
 
 const Faq = () => {
     return (
-        <div className='mt-20 w-[85%] mx-auto'>
+        <div className='mt-28 w-[85%] mx-auto'>
             <div className='flex'>
                 <div className='w-[40%] h-auto'>
                     <h1 className='font-mdtest uppercase font-bold leading-[62px] text-[62px] tracking-[0.48px]'>Frequently asked questions</h1>
