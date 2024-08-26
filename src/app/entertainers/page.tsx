@@ -1,105 +1,65 @@
 import Header from '@/components/Header';
-import Image from 'next/image';
 import React from 'react';
-import comment from '../../../public/images/comment-ent.png'
-import comment1 from '../../../public/images/comment-ent1.png'
-import group from '../../../public/images/youth-group.png'
 import Faq from '@/components/Faqs';
 import Footer from '@/components/Footer';
-import liveparte from '../../../public/svgs/group-ent.svg'
 import EntertainerBanner from '@/components/homepage/entertainerBg';
 import Studio from '@/components/Studio';
 import GetPaid from '@/components/GetPaid';
-
+import Enagement from '@/components/Enagement';
+import Earning from '@/components/Earning';
+import GoLiveCard from '@/components/Cards/GoLiveCard';
+import liveparte from '../../../public/images/golive.png';
+import liveparte1 from '../../../public/images/golive2.png';
+import liveparte2 from '../../../public/images/golive3.png';
 
 
 const Entertainers = () => {
+
     return (
         <div>
             <Header />
             <EntertainerBanner />
             <Studio />
             <GetPaid />
-            <div className='w-[90%] mx-auto mt-6'>
-                <div className='bg-grey.300 h-[426px] rounded-[40px] mt-6 flex items-center'>
-                    <div className='flex-1 h-full'>
-                        <div className='pl-16 pt-10 pb-12 flex flex-col justify-between h-full'>
-                            <div>
-                                <h1 className='text-[35px] uppercase font-mdtest font-bold leading-[35px] tracking-[-0.12px] mt-6'>Engage with Fans</h1>
-                                <p className='text-grey.200 font-mattersq leading-[19.2px] text-base tracking-[-0.12px] w-[60%] mt-2'>Create more than a fanbase. The direct communication on Liveparte means more revenue.</p>
+            <Earning />
+            <Enagement />
+            <div className='mt-32'>
+                <h1 className='font-mdtest font-bold text-center text-[62px] leading-[62px] tracking-[0.48px]'>GO LIVE IN MINUTES, NOT WEEKS</h1>
+                <div className='flex justify-center mx-auto gap-8 mt-16'>
+                    <GoLiveCard
+                        title='Create your Account'
+                        description='Join as an artist or event organizer on Liveparte to access our platform.'
+                        bgColor='bg-yellow.500'
+                        bgImg={liveparte}
+                    />
+                    <GoLiveCard
+                        title='Get Verified'
+                        description='Once your account is verified, you can access Studio to create events.'
+                        bgColor='bg-blue.200'
+                        bgImg={liveparte1}
+                    />
+                    <GoLiveCard
+                        title='Go Live'
+                        description=''
+                        bgColor='bg-red.200'
+                        bgImg={liveparte2}
+                    />
+                </div>
+
+                <div className='mt-32 w-[85%] relative mx-auto'>
+                    <div className='w-full h-full relative'>
+                        <svg width="1200" height="498" viewBox="0 0 1200 498" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M549 30C549 13.4315 535.569 0 519 0H30C13.4315 0 0 13.4315 0 30V468C0 484.569 13.4315 498 30 498H519C535.569 498 549 484.569 549 468V273C549 256.431 562.431 243 579 243H619C635.569 243 649 256.431 649 273V468C649 484.569 662.431 498 679 498H1170C1186.57 498 1200 484.569 1200 468V30C1200 13.4315 1186.57 0 1170 0H684C667.431 0 654 13.4315 654 30V180C654 196.569 640.569 210 624 210H579C562.431 210 549 196.569 549 180V30ZM573 226.5C573 231.747 577.253 236 582.5 236H617.5C622.747 236 627 231.747 627 226.5C627 221.253 622.747 217 617.5 217H582.5C577.253 217 573 221.253 573 226.5Z" fill="#FE4365" />
+                        </svg>
+                        <div className='absolute h-full flex top-1.5 justify-between w-full'>
+                            <div className='flex-1'>Hello1</div>
+                            <div className='flex-1 ml-20 h-full'>
+                                <div className='ml-5 mr-10 h-full border'>Hello</div>
                             </div>
-                            <div>
-                                <Image className='w-[344px] relative z-50' src={comment} alt="liveparte_comment" />
-                                <Image className='w-[288px] relative z-40 -mt-7 ml-20' src={comment1} alt="liveparte_comment" />
-                            </div>
                         </div>
                     </div>
-                    <div className='flex-1'>
-                        <Image className='' src={liveparte} alt='' />
-                    </div>
+
                 </div>
-            </div>
-            <div>
-                <h1 className='text-center mt-28 font-mdtest text-[62px] leading-[62px] font-bold uppercase tracking-[0.48px] w-[45%] mx-auto'>See how much you can earn on liveparte</h1>
-                <div className='flex w-[70%] mt-14 mx-auto gap-6'>
-                    <div className='bg-grey.300 w-[378px] p-6 hover:border hover:border-green.400 h-[428px] rounded-[12px]'>
-                        <h1 className='text-center font-mdtest font-bold text-[52px] leading-[52px] tracking-[0.48px]'>50,000</h1>
-                        <p className='text-center text-[14px] leading-[16.8px] tracking-[-0.12px] text-[#63768D] mt-2'>Fans</p>
-                        <input className='custom-range w-full mt-8' type='range' />
-                        <div className='bg-grey.500 border border-grey.400 h-[50px] mt-6 p-2 rounded-[8px]'>
-                            <p className='text-grey.600 text-[11px] font-medium font-mattersq'>Ticket Amount</p>
-                            <p className='text-[13px] font-mattersq leading-4 tracking-[-0.12px]'><span className='text-grey.600'>$</span> 2</p>
-                        </div>
-                        <div className='bg-green.400 h-[133px] flex justify-center items-center rounded-[8px] mt-10'>
-                            <h1 className='text-[52px] leading-[52px] tracking-[0.48px] font-mdtest font-bold'>$100,000</h1>
-                        </div>
-                    </div>
-                    <div className='w-[306px] rounded-[12px] hover:border hover:border-green.400  bg-grey.300 p-6'>
-                        <h1 className='uppercase font-mdtest text-[32px] leading-[32px] font-bold tracking-[0.48px]'>Liveparte</h1>
-                        <div className='mt-8'>
-                            <h2 className='font-mattersq text-[14px] leading-[16.8px] tracking-[-0.12px] text-grey.600'>Fans needed</h2>
-                            <p className='font-medium text-base font-mattersq leading-[19.8px] tracking-[-0.12px] mt-1.5'>50,000</p>
-                        </div>
-                        <div className='mt-8'>
-                            <h2 className='font-mattersq text-[14px] leading-[16.8px] tracking-[-0.12px] text-grey.600'>Amount per stream</h2>
-                            <p className='font-medium text-base font-mattersq leading-[19.8px] tracking-[-0.12px] mt-1.5'>$2</p>
-                        </div>
-                        <div className='mt-8'>
-                            <h2 className='font-mattersq text-[14px] leading-[16.8px] tracking-[-0.12px] text-grey.600'>Payout</h2>
-                            <p className='font-medium text-base font-mattersq leading-[19.8px] tracking-[-0.12px] mt-1.5'>Within 7 days</p>
-                        </div>
-                        <div className='mt-8'>
-                            <h2 className='font-mattersq text-[14px] leading-[16.8px] tracking-[-0.12px] text-grey.600'>Data</h2>
-                            <p className='font-medium text-base font-mattersq leading-[19.8px] tracking-[-0.12px] mt-1.5'>Full Access</p>
-                        </div>
-                    </div>
-                    <div className='w-[306px] rounded-[12px] hover:border hover:border-green.400  bg-grey.300 p-6'>
-                        <h1 className='uppercase font-mdtest text-[32px] leading-[32px] font-bold tracking-[0.48px]'>Other platforms</h1>
-                        <div className='mt-8'>
-                            <h2 className='font-mattersq text-[14px] leading-[16.8px] tracking-[-0.12px] text-grey.600'>Streams needed</h2>
-                            <p className='font-medium text-base font-mattersq leading-[19.8px] tracking-[-0.12px] mt-1.5'>40,000,000</p>
-                        </div>
-                        <div className='mt-8'>
-                            <h2 className='font-mattersq text-[14px] leading-[16.8px] tracking-[-0.12px] text-grey.600'>Amount per stream</h2>
-                            <p className='font-medium text-base font-mattersq leading-[19.8px] tracking-[-0.12px] mt-1.5'>$0.0025</p>
-                        </div>
-                        <div className='mt-8'>
-                            <h2 className='font-mattersq text-[14px] leading-[16.8px] tracking-[-0.12px] text-grey.600'>Payout</h2>
-                            <p className='font-medium text-base font-mattersq leading-[19.8px] tracking-[-0.12px] mt-1.5'>60-90 Days</p>
-                        </div>
-                        <div className='mt-8'>
-                            <h2 className='font-mattersq text-[14px] leading-[16.8px] tracking-[-0.12px] text-grey.600'>Data</h2>
-                            <p className='font-medium text-base font-mattersq leading-[19.8px] tracking-[-0.12px] mt-1.5'>Demography</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/*  */}
-            <div className='flex w-[90%] mx-auto mt-28 gap-16'>
-                <div className='flex-1'>
-                    <Image className=' bg-cover object-cover' src={group} alt='' />
-                </div>
-                <div className='flex-1'>2</div>
             </div>
             <Faq />
             <Footer />

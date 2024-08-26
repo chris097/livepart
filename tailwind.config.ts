@@ -36,7 +36,12 @@ const config: Config = {
       "red.300": "#FE4365",
       "grey.400": "#343F4B",
       "grey.500": "#222428",
-      "grey.600": "#63768D"
+      "grey.600": "#63768D",
+      "black.300": "#060809",
+      "yellow.200": "#FFF3D1",
+      "yellow.400": "#FFCE41",
+      "yellow.500": "#FFC41B",
+      "blue.200": "#55C4F1"
     },
     fontFamily: {
       mattersq: "Matter SQ Regular",
