@@ -11,8 +11,8 @@ import comment3 from '../../../public/images/comment3.png';
 const DisplayCard = () => {
     return (
         <div>
-            <h1 className="text-center text-white.200 font-mdtest font-bold text-[62px] leading-[62px] tracking-[0.48px] mt-24">ACCESS LIKE NEVER BEFORE.</h1>
-            <div className="grid grid-cols-4 w-[85%] mx-auto mt-10 gap-6">
+            <h1 className="text-center text-white.200 font-mdtest font-bold md:text-[62px] md:leading-[62px] text-[32px] leading-[32px] tracking-[0.48px] mt-24">ACCESS LIKE NEVER BEFORE.</h1>
+            <div className="grid lg:grid-cols-4 grid-cols-1 w-[85%] mx-auto mt-10 gap-6">
                 <AccessCard
                     gradientColor="bg-linear-gradient-yellow"
                     imgBgColor="bg-yellow.100"

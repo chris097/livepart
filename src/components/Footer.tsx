@@ -11,16 +11,18 @@ import twitter from '../../public/svgs/x.svg'
 const Footer = () => {
     return (
         <div>
-            <div className='w-[90%] mx-auto mt-44 grid grid-cols-4 ml-44 mb-5'>
-                <div>
-                    <Image src={logo} alt='liveparte logo' />
-                    <div className='mt-8 flex gap-4'>
-                        <div className='w-[32px] h-[32px]'><Image src={facebook} alt='facebook icon' /></div>
-                        <div className='w-[32px] h-[32px]'><Image src={instagram} alt='facebook icon' /></div>
-                        <div className='w-[32px] h-[32px]'><Image src={linkedin} alt='facebook icon' /></div>
-                        <div className='w-[32px] h-[32px]'><Image src={twitter} alt='facebook icon' /></div>
+            <div className='w-[90%] mx-auto lg:mt-44 mt-16 lg:grid lg:grid-cols-4 flex flex-col-reverse lg:ml-44 mb-5'>
+                <div className='flex lg:flex-col flex-row lg:justify-start justify-between lg:items-start items-center'>
+                    <div>
+                        <Image src={logo} alt='liveparte logo' />
+                        <div className='mt-8 flex gap-4'>
+                            <div className='w-[32px] h-[32px]'><Image src={facebook} alt='facebook icon' /></div>
+                            <div className='w-[32px] h-[32px]'><Image src={instagram} alt='facebook icon' /></div>
+                            <div className='w-[32px] h-[32px]'><Image src={linkedin} alt='facebook icon' /></div>
+                            <div className='w-[32px] h-[32px]'><Image src={twitter} alt='facebook icon' /></div>
+                        </div>
                     </div>
-                    <p className='font-mattersq text-base font-medium leading-[19.2px] mt-7'>© 2024 Liveparte</p>
+                    <p className='font-mattersq text-base font-medium leading-[19.2px] lg:mt-7 mt-12'>© 2024 Liveparte</p>
                 </div>
                 <div>
                     <h1 className='font-mdtest font-bold text-[20px] leading-[20px] tracking-[-0.12px]'>Company</h1>
@@ -35,7 +37,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div>
-                    <h1 className='font-mdtest font-bold text-[20px] leading-[20px] tracking-[-0.12px]'>Resources</h1>
+                    <h1 className='font-mdtest font-bold text-[20px] lg:mt-0 mt-5 leading-[20px] tracking-[-0.12px]'>Resources</h1>
                     <div className='mt-4'>
                         <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Help Center</Link>
                     </div>
