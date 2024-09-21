@@ -25,8 +25,8 @@ const AccordionItem: React.FC<IFaqProps> = ({ title, description }) => {
             <div onClick={toggleAccordion} className='bg-grey.300 p-6 mt-4 rounded-[12px] cursor-pointer w-full h-auto'>
                 <h1 className='lg:text-[18px] text-[15px] lg:leading-[21.6px] leading-[18px] tracking-[-0.12px] font-mattersq font-medium'>{title}</h1>
                 {isOpen && <div className='mt-4'>
-                    <p className='text-[14px] leading-[16.8px] font-mattersq tracking-[-0.12px] text-grey.200 mt-4'>Liveparte is a video streaming and fan engagement platform that gives fans direct access to live and on-demand concerts, events, and performances by top artists, comedians, and entertainers  at the most iconic venues in the world.</p>
-                    <p className='text-[14px] leading-[16.8px] font-mattersq tracking-[-0.12px] text-grey.200 mt-6'>Liveparte empowers artists to connect with more fans and generate more revenue, while fans enjoy unprecedented access to their favorite performances from anywhere in the world. Our innovative service allows artists and organizers to stream live events, sell merchandise, and receive digital gifts from fans, expanding their reach and revenue potential beyond the physical limitations of traditional concert venues. Whether it's a live concert, talk show, or comedy event, we provide value to both rights holders and fans.</p>
+                    <p className='text-[14px] leading-[16.8px] font-mattersq tracking-[-0.12px] text-grey.200 mt-4'>Liveparte is a video streaming and fan engagement platform that gives fans direct access to live and on-demand concerts, events, and performances by top artists, comedians, and entertainers at the most iconic venues in the world.</p>
+                    <p className='text-[14px] leading-[16.8px] font-mattersq tracking-[-0.12px] text-grey.200 mt-6'>Liveparte empowers artists to connect with more fans and generate more revenue, while fans enjoy unprecedented access to their favorite performances from anywhere in the world. Our innovative service allows artists and organizers to stream live events, sell merchandise, and receive digital gifts from fans, expanding their reach and revenue potential beyond the physical limitations of traditional concert venues. Whether it&apos;s a live concert, talk show, or comedy event, we provide value to both rights holders and fans.</p>
                     <p className='text-[14px] leading-[16.8px] font-mattersq tracking-[-0.12px] text-grey.200 mt-6'>Our mission is to transform the live entertainment industry by unlocking opportunities for artists, entertainers, and content creators to connect and engage with their fans worldwide. This is our singular purpose, our reason for being. Every day, we strive to make live events more meaningful for both artists/organizers and fans, and to empower them with better access.</p>
                 </div>}
             </div>
@@ -50,7 +50,7 @@ const Faq = () => {
                 </div>
                 <div className='lg:w-[60%] lg:ml-4 lg:mt-0 mt-10'>
                     {faqs.map((_v, i) => (
-                        <AccordionItem title={_v.title} description={_v.description} />
+                        <AccordionItem key={i} title={_v.title} description={_v.description} />
                     ))}
                 </div>
             </div>

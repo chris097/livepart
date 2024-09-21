@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import footerBg from '../../public/images/liveparte_footer.png';
 import logo from '../../public/svgs/logo.svg';
 import Image from 'next/image';
@@ -9,10 +10,11 @@ import linkedin from '../../public/svgs/linkedin.svg'
 import twitter from '../../public/svgs/x.svg'
 
 const Footer = () => {
+    const [toggle, setToggle] = useState(false);
     return (
         <div>
             <div className='w-[90%] mx-auto lg:mt-44 mt-16 lg:grid lg:grid-cols-4 flex flex-col-reverse lg:ml-44 mb-5'>
-                <div className='flex lg:flex-col flex-row lg:justify-start justify-between lg:items-start items-center'>
+                <div className='flex lg:flex-col flex-row lg:justify-start justify-between lg:items-start items-center lg:mt-0 mt-10'>
                     <div>
                         <Image src={logo} alt='liveparte logo' />
                         <div className='mt-8 flex gap-4'>
@@ -25,40 +27,60 @@ const Footer = () => {
                     <p className='font-mattersq text-base font-medium leading-[19.2px] lg:mt-7 mt-12'>© 2024 Liveparte</p>
                 </div>
                 <div>
-                    <h1 className='font-mdtest font-bold text-[20px] leading-[20px] tracking-[-0.12px]'>Company</h1>
-                    <div className='mt-4'>
-                        <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>About Us</Link>
+                    <div className='flex justify-between items-center lg:mt-0 mt-8'>
+                        <h1 className='font-mdtest font-bold text-[20px] leading-[20px] tracking-[-0.12px]'>Company</h1>
+                        <svg className='lg:hidden block' onClick={() => setToggle(!toggle)} width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 1L6 6L1 1" stroke="#B4BECB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </div>
-                    <div className='mt-4'>
-                        <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Careers</Link>
-                    </div>
-                    <div className='mt-4'>
-                        <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Studio</Link>
-                    </div>
+                    {toggle && <>
+                        <div className='mt-4'>
+                            <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>About Us</Link>
+                        </div>
+                        <div className='mt-4'>
+                            <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Careers</Link>
+                        </div>
+                        <div className='mt-4'>
+                            <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Studio</Link>
+                        </div>
+                    </>}
                 </div>
                 <div>
-                    <h1 className='font-mdtest font-bold text-[20px] lg:mt-0 mt-5 leading-[20px] tracking-[-0.12px]'>Resources</h1>
-                    <div className='mt-4'>
-                        <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Help Center</Link>
+                    <div className='flex justify-between items-center lg:mt-0 mt-8 '>
+                        <h1 className='font-mdtest font-bold text-[20px] leading-[20px] tracking-[-0.12px]'>Resources</h1>
+                        <svg className='lg:hidden block' onClick={() => setToggle(!toggle)} width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 1L6 6L1 1" stroke="#B4BECB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </div>
-                    <div className='mt-4'>
-                        <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Email us</Link>
-                    </div>
-                    <div className='mt-4'>
-                        <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Blog</Link>
-                    </div>
+
+                    {toggle && <>
+                        <div className='lg:mt-4 mt-8'>
+                            <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Help Center</Link>
+                        </div>
+                        <div className='mt-4'>
+                            <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Email us</Link>
+                        </div>
+                        <div className='mt-4'>
+                            <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Blog</Link>
+                        </div>
+                    </>}
                 </div>
                 <div>
-                    <h1 className='font-mdtest font-bold text-[20px] leading-[20px] tracking-[-0.12px]'>Legal</h1>
-                    <div className='mt-4'>
+                    <div className='flex justify-between items-center'>
+                        <h1 className='font-mdtest font-bold text-[20px] leading-[20px] tracking-[-0.12px]'>Legal</h1>
+                        <svg className='lg:hidden block' onClick={() => setToggle(!toggle)} width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 1L6 6L1 1" stroke="#B4BECB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    {toggle && <><div className='mt-4'>
                         <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Help Center</Link>
                     </div>
-                    <div className='mt-4'>
-                        <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Email us</Link>
-                    </div>
-                    <div className='mt-4'>
-                        <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Blog</Link>
-                    </div>
+                        <div className='mt-4'>
+                            <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Email us</Link>
+                        </div>
+                        <div className='mt-4'>
+                            <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Blog</Link>
+                        </div></>}
                 </div>
             </div>
             <div>

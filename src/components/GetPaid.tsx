@@ -9,7 +9,7 @@ import comment_loc1 from '../../public/svgs/comment-loc1.svg'
 const GetPaid = () => {
     return (
         <div className='w-[90%] mx-auto'>
-            <div className='flex gap-6 mt-40'>
+            <div className='flex lg:flex-row flex-col gap-6 mt-40'>
                 <div className='flex-1 bg-grey.300 h-[426px] rounded-[40px] py-9'>
                     <div className='flex justify-center h-full'>
                         <div className='flex justify-between flex-col h-full'>

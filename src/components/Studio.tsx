@@ -4,7 +4,7 @@ import liveparte from '../../public/images/circle_bg.png'
 
 const Studio = () => {
     return (
-        <div className='flex justify-center mt-40 gap-6 items-center'>
+        <div className='flex lg:flex-row flex-col justify-center mt-40 gap-6 items-center'>
             <div className='w-[298px] h-[181px] bg-grey.300 flex justify-between flex-col rounded-[12px] p-5'>
                 <div>
                     <h1 className='uppercase font-mdtest text-[24px] leading-[24px] font-medium tracking-[-0.12px]'>Studio</h1>
@@ -21,7 +21,7 @@ const Studio = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-[366px] h-[366px] rounded-full'>
+            <div className='lg:w-[366px] lg:h-[366px] w-[60%] h-[60%] rounded-full'>
                 <Image className='w-full h-full bg-cover object-cover' src={liveparte} alt='' />
             </div>
             <div className='w-[298px] h-[181px] bg-grey.300 flex justify-between flex-col rounded-[12px] p-5'>

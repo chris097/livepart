@@ -20,7 +20,7 @@ import Image from 'next/image';
 const Entertainers = () => {
 
     return (
-        <div>
+        <div className='overflow-x-hidden'>
             <Header />
             <EntertainerBanner />
             <Studio />
