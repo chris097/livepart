@@ -1,10 +1,17 @@
+'use client';
 import Image from 'next/image';
-import React from 'react';
+import React, { ChangeEvent, useState } from 'react';
 import comment from '../../public/images/comment-ent.png';
 import comment1 from '../../public/images/comment-ent1.png';
 import liveparte from '../../public/svgs/group-ent.svg';
 
 const Earning = () => {
+    const [rangeValue, setRangeValue] = useState<number>(50); // Default value set to 50
+
+    const handleRangeChange = (e: ChangeEvent<HTMLInputElement>) => {
+        setRangeValue(Number(e.target.value)); // Update state when range changes
+    };
+
     return (
         <div>
             <div className='w-[90%] mx-auto mt-6'>
@@ -32,7 +39,11 @@ const Earning = () => {
                     <div className='bg-grey.300 w-[378px] p-6 hover:border hover:border-green.400 h-[428px] rounded-[12px]'>
                         <h1 className='text-center font-mdtest font-bold text-[52px] leading-[52px] tracking-[0.48px]'>50,000</h1>
                         <p className='text-center text-[14px] leading-[16.8px] tracking-[-0.12px] text-[#63768D] mt-2'>Fans</p>
-                        <input className='custom-range w-full mt-8' type='range' />
+                        <input className='custom-range w-full mt-8' min="0"
+                            max="100"
+                            value={rangeValue}
+                            onChange={handleRangeChange} type='range'
+                        />
                         <div className='bg-grey.500 border border-grey.400 h-[50px] mt-6 p-2 rounded-[8px]'>
                             <p className='text-grey.600 text-[11px] font-medium font-mattersq'>Ticket Amount</p>
                             <p className='text-[13px] font-mattersq leading-4 tracking-[-0.12px]'><span className='text-grey.600'>$</span> 2</p>

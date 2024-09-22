@@ -10,7 +10,7 @@ import linkedin from '../../public/svgs/linkedin.svg'
 import twitter from '../../public/svgs/x.svg'
 
 const Footer = () => {
-    const [toggle, setToggle] = useState(false);
+    const [toggle, setToggle] = useState(true);
     return (
         <div>
             <div className='w-[90%] mx-auto lg:mt-44 mt-16 lg:grid lg:grid-cols-4 flex flex-col-reverse lg:ml-44 mb-5'>

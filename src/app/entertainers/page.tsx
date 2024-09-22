@@ -13,6 +13,14 @@ import liveparte1 from '../../../public/images/golive2.png';
 import liveparte2 from '../../../public/images/golive3.png';
 import tracks from '../../../public/images/tracks.png';
 import artist_a from '../../../public/images/artist_a.png';
+import artist_b from '../../../public/images/artist_b.png';
+import artist_c from '../../../public/images/artist_c.png';
+import artist_d from '../../../public/images/artist_d.png';
+import artist_e from '../../../public/images/artist_e.png';
+import artist_f from '../../../public/images/artist_f.png';
+import artist_g from '../../../public/images/artist_g.png';
+import artist_h from '../../../public/images/artist_h.png';
+import artist_i from '../../../public/images/artist_i.png';
 import lock from '../../../public/images/lock.png';
 import Image from 'next/image';
 
@@ -107,32 +115,32 @@ const Entertainers = () => {
                                 <Image className='w-full h-full' src={artist_a} alt='liveparte artist' />
                             </div>
                             <div className='rounded-full -ml-12 relative z-40 w-[260.78px] h-[260.78px]'>
-                                <Image className='w-full h-full' src={artist_a} alt='liveparte artist' />
+                                <Image className='w-full h-full' src={artist_b} alt='liveparte artist' />
                             </div>
                             <div className='rounded-full -ml-12 relative z-50 w-[260.78px] h-[260.78px]'>
-                                <Image className='w-full h-full' src={artist_a} alt='liveparte artist' />
+                                <Image className='w-full h-full' src={artist_c} alt='liveparte artist' />
                             </div>
                         </div>
                         <div className='flex'>
                             <div className='rounded-full relative z-30 w-[260.78px] h-[260.78px]'>
-                                <Image className='w-full h-full' src={artist_a} alt='liveparte artist' />
+                                <Image className='w-full h-full' src={artist_d} alt='liveparte artist' />
                             </div>
                             <div className='rounded-full -ml-12 relative z-40 w-[260.78px] h-[260.78px]'>
-                                <Image className='w-full h-full' src={artist_a} alt='liveparte artist' />
+                                <Image className='w-full h-full' src={artist_e} alt='liveparte artist' />
                             </div>
                             <div className='rounded-full -ml-12 relative z-50 w-[260.78px] h-[260.78px]'>
-                                <Image className='w-full h-full' src={artist_a} alt='liveparte artist' />
+                                <Image className='w-full h-full' src={artist_f} alt='liveparte artist' />
                             </div>
                         </div>
                         <div className='flex'>
                             <div className='rounded-full relative z-30 w-[260.78px] h-[260.78px]'>
-                                <Image className='w-full h-full' src={artist_a} alt='liveparte artist' />
+                                <Image className='w-full h-full' src={artist_g} alt='liveparte artist' />
                             </div>
                             <div className='rounded-full -ml-12 relative z-40 w-[260.78px] h-[260.78px]'>
-                                <Image className='w-full h-full' src={artist_a} alt='liveparte artist' />
+                                <Image className='w-full h-full' src={artist_h} alt='liveparte artist' />
                             </div>
                             <div className='rounded-full -ml-12 relative z-50 w-[260.78px] h-[260.78px]'>
-                                <Image className='w-full h-full' src={artist_a} alt='liveparte artist' />
+                                <Image className='w-full h-full' src={artist_i} alt='liveparte artist' />
                             </div>
                         </div>
                     </div>
