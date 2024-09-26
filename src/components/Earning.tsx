@@ -12,7 +12,7 @@ import { thousand } from '@/helper';
 const Earning = () => {
     const [rangeValue, setRangeValue] = useState<number>(1000);
 
-    const [ticket, setTicket] = useState('0');
+    const [ticket, setTicket] = useState('1');
 
     const handleRangeChange = (e: ChangeEvent<HTMLInputElement>) => {
         setRangeValue(Number(e.target.value)); // Update state when range changes
