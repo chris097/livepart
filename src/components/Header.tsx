@@ -18,13 +18,13 @@ const Header = () => {
                 </Link>
                 <div className='lg:flex hidden gap-6 items-center'>
                     <Link href="/event" className={`font-mattersq font-semibold text-[15px] leading-[14px] tracking-[-0.12px] ${isActive('/event') ? 'text-red.300' : ''}`}>
-                        Browse Events
+                        <div className='font-mattersq font-semibold text-[15px] leading-[14px] tracking-[-0.12px]'>Browse Events</div>
                     </Link>
                     <Link href="/on-demand" className={`font-mattersq font-semibold text-[15px] leading-[14px] tracking-[-0.12px] ${isActive('/on-demand') ? 'text-red.300' : ''}`}>
-                        On Demand
+                        <div className='font-mattersq font-semibold text-[15px] leading-[14px] tracking-[-0.12px]'>On Demand</div>
                     </Link>
                     <Link href="/entertainers" className={`font-mattersq font-semibold text-[15px] leading-[14px] tracking-[-0.12px] ${isActive('/entertainers') ? 'text-red.300' : ''}`}>
-                        For Entertainers
+                        <div className='font-mattersq font-semibold text-[15px] leading-[14px] tracking-[-0.12px]'>For Entertainers</div>
                     </Link>
                 </div>
                 <div className='lg:flex hidden gap-8 items-center font-mattersq text-[15px] font-semibold'>

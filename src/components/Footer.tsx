@@ -30,7 +30,7 @@ const Footer = () => {
                     <div className='flex justify-between items-center lg:mt-0 mt-8'>
                         <h1 className='font-mdtest font-bold text-[20px] leading-[20px] tracking-[-0.12px]'>Company</h1>
                         <svg className='lg:hidden block' onClick={() => setToggle(!toggle)} width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11 1L6 6L1 1" stroke="#B4BECB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M11 1L6 6L1 1" stroke="#B4BECB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                     </div>
                     {toggle && <>
@@ -49,7 +49,7 @@ const Footer = () => {
                     <div className='flex justify-between items-center lg:mt-0 mt-8 '>
                         <h1 className='font-mdtest font-bold text-[20px] leading-[20px] tracking-[-0.12px]'>Resources</h1>
                         <svg className='lg:hidden block' onClick={() => setToggle(!toggle)} width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11 1L6 6L1 1" stroke="#B4BECB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M11 1L6 6L1 1" stroke="#B4BECB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                     </div>
 
@@ -69,17 +69,17 @@ const Footer = () => {
                     <div className='flex justify-between items-center'>
                         <h1 className='font-mdtest font-bold text-[20px] leading-[20px] tracking-[-0.12px]'>Legal</h1>
                         <svg className='lg:hidden block' onClick={() => setToggle(!toggle)} width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11 1L6 6L1 1" stroke="#B4BECB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M11 1L6 6L1 1" stroke="#B4BECB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                     </div>
                     {toggle && <><div className='mt-4'>
-                        <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Help Center</Link>
+                        <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Terms of Service</Link>
                     </div>
                         <div className='mt-4'>
-                            <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Email us</Link>
+                            <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Purchase Policy</Link>
                         </div>
                         <div className='mt-4'>
-                            <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Blog</Link>
+                            <Link href="/" className='font-mattersq font-medium text-base leading-[19.2px] tracking-[-0.12px]'>Privacy Policy</Link>
                         </div></>}
                 </div>
             </div>
