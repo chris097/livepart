@@ -49,7 +49,7 @@ const Earning = () => {
             <div>
                 <h1 className='text-center mt-28 font-mdtest text-[62px] leading-[62px] font-bold uppercase tracking-[0.48px] w-[45%] mx-auto'>See how much you can earn on liveparte</h1>
                 <div className='flex w-[70%] mt-14 mx-auto gap-6'>
-                    <div className='bg-grey.300 w-[378px] p-6 hover:border hover:border-green.400 h-[428px] rounded-[12px]'>
+                    <div className='bg-grey.300 w-[378px] p-6 h-[428px] rounded-[12px]'>
                         <h1 className='text-center font-mdtest font-bold text-[52px] leading-[52px] tracking-[0.48px]'>{thousand(rangeValue)}</h1>
                         <p className='text-center text-[14px] leading-[16.8px] tracking-[-0.12px] text-[#63768D] mt-2'>Fans</p>
                         <input className='custom-range w-full mt-8'
@@ -69,7 +69,7 @@ const Earning = () => {
                             <h1 className='text-[52px] leading-[52px] tracking-[0.48px] font-mdtest font-bold'>${thousand(rangeValue * Number(ticket))}</h1>
                         </div>
                     </div>
-                    <div className='w-[306px] rounded-[12px] hover:border hover:border-green.400  bg-grey.300 p-6'>
+                    <div className='w-[306px] rounded-[12px] border border-green.400  bg-grey.300 p-6'>
                         <h1 className='uppercase font-mdtest text-[32px] leading-[32px] font-bold tracking-[0.48px]'>Liveparte</h1>
                         <div className='mt-8'>
                             <h2 className='font-mattersq text-[14px] leading-[16.8px] tracking-[-0.12px] text-grey.600'>Fans needed</h2>
@@ -88,7 +88,7 @@ const Earning = () => {
                             <p className='font-medium text-base font-mattersq leading-[19.8px] tracking-[-0.12px] mt-1.5'>Full Access</p>
                         </div>
                     </div>
-                    <div className='w-[306px] rounded-[12px] hover:border hover:border-green.400  bg-grey.300 p-6'>
+                    <div className='w-[306px] rounded-[12px] bg-grey.300 p-6'>
                         <h1 className='uppercase font-mdtest text-[32px] leading-[32px] font-bold tracking-[0.48px]'>Other platforms</h1>
                         <div className='mt-8'>
                             <h2 className='font-mattersq text-[14px] leading-[16.8px] tracking-[-0.12px] text-grey.600'>Streams needed</h2>
