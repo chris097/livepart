@@ -42,7 +42,7 @@ const data: IDataProps[] = [
 
 const Enagement = () => {
     return (
-        <div className='flex w-[90%] mx-auto mt-28 gap-16 ml-32'>
+        <div className='flex md:flex-row flex-col w-[90%] mx-auto mt-28 gap-16 md:ml-32'>
             <div className='flex-1'>
                 <Image className='bg-cover object-cover' src={group} alt='' />
             </div>

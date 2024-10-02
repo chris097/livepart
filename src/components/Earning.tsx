@@ -21,12 +21,12 @@ const Earning = () => {
     return (
         <div>
             <div className='w-[90%] mx-auto mt-6'>
-                <div className='bg-grey.300 h-[426px] rounded-[40px] mt-6 flex justify-between items-center'>
+                <div className='bg-grey.300 md:h-[426px] pb-10 h-auto md:rounded-[40px] mx-auto rounded-[12px] mt-6 flex md:flex-row flex-col justify-between items-center'>
                     <div className=' h-full'>
-                        <div className='pl-16 pt-10 pb-12 flex flex-col justify-between h-full'>
+                        <div className='md:pl-16 pl-6 md:pt-10 pb-12 flex flex-col justify-between h-full'>
                             <div>
                                 <h1 className='text-[35px] uppercase font-mdtest font-bold leading-[35px] tracking-[-0.12px] mt-6'>Engage with Fans</h1>
-                                <p className='text-grey.200 font-mattersq leading-[19.2px] text-base tracking-[-0.12px] w-[50%] mt-2'>
+                                <p className='text-grey.200 font-mattersq leading-[19.2px] text-base tracking-[-0.12px] md:w-[50%] mt-2'>
                                     Create more than a fanbase - engage your fans with personalized messages and drive more revenue.
                                 </p>
                             </div>
@@ -36,20 +36,20 @@ const Earning = () => {
                             </div> */}
                         </div>
                     </div>
-                    <div className='pr-44 relative'>
-                        <Image className='absolute top-0 z-40 -ml-24 h-[80px] w-[344px] bg-cover object-center' src={enage_comment1} alt='' />
-                        <Image className='absolute bottom-12 -ml-52 z-40' src={enage_comment2} alt='' />
-                        <Image className='absolute top-32 pt-2 ml-32 z-40' src={enage_comment3} alt='' />
+                    <div className='md:pr-44 relative md:mt-0 mt-10'>
+                        <Image className='absolute top-0 z-40 md:-ml-24 -ml-10 md:h-[80px] md:w-[344px] w-[141px] h-[39.86px] bg-cover object-center' src={enage_comment1} alt='' />
+                        <Image className='absolute md:bottom-12 bottom-2 md:-ml-52 -ml-20 z-40 w-[171.14px] h-[22.13px]' src={enage_comment2} alt='' />
+                        <Image className='absolute md:top-32 top-10 pt-2 w-[174px] h-[33.23px] md:ml-32 ml-16 z-40' src={enage_comment3} alt='' />
 
-                        <Image className='relative z-30' src={liveparte} alt='' />
+                        <Image className='relative w-[145.67px] z-30' src={liveparte} alt='' />
 
                     </div>
                 </div>
             </div>
             <div>
-                <h1 className='text-center mt-28 font-mdtest text-[62px] leading-[62px] font-bold uppercase tracking-[0.48px] w-[45%] mx-auto'>See how much you can earn on liveparte</h1>
-                <div className='flex w-[70%] mt-14 mx-auto gap-6'>
-                    <div className='bg-grey.300 w-[378px] p-6 h-[428px] rounded-[12px]'>
+                <h1 className='text-center mt-28 font-mdtest md:text-[62px] text-[32px] md:leading-[62px] leading-[32px] font-bold uppercase tracking-[0.48px] md:w-[45%] w-[90%] mx-auto'>See how much you can earn on liveparte</h1>
+                <div className='flex md:flex-row flex-col md:w-[70%] w-[90%] mt-14 mx-auto gap-6'>
+                    <div className='bg-grey.300 md:w-[378px] p-6 h-[428px] rounded-[12px]'>
                         <h1 className='text-center font-mdtest font-bold text-[52px] leading-[52px] tracking-[0.48px]'>{thousand(rangeValue)}</h1>
                         <p className='text-center text-[14px] leading-[16.8px] tracking-[-0.12px] text-[#63768D] mt-2'>Fans</p>
                         <input className='custom-range w-full mt-8'
@@ -69,7 +69,7 @@ const Earning = () => {
                             <h1 className='text-[52px] leading-[52px] tracking-[0.48px] font-mdtest font-bold'>${thousand(rangeValue * Number(ticket))}</h1>
                         </div>
                     </div>
-                    <div className='w-[306px] rounded-[12px] border border-green.400  bg-grey.300 p-6'>
+                    <div className='md:w-[306px] rounded-[12px] border border-green.400  bg-grey.300 p-6'>
                         <h1 className='uppercase font-mdtest text-[32px] leading-[32px] font-bold tracking-[0.48px]'>Liveparte</h1>
                         <div className='mt-8'>
                             <h2 className='font-mattersq text-[14px] leading-[16.8px] tracking-[-0.12px] text-grey.600'>Fans needed</h2>
@@ -88,7 +88,7 @@ const Earning = () => {
                             <p className='font-medium text-base font-mattersq leading-[19.8px] tracking-[-0.12px] mt-1.5'>Full Access</p>
                         </div>
                     </div>
-                    <div className='w-[306px] rounded-[12px] bg-grey.300 p-6'>
+                    <div className='md:w-[306px] rounded-[12px] bg-grey.300 p-6'>
                         <h1 className='uppercase font-mdtest text-[32px] leading-[32px] font-bold tracking-[0.48px]'>Other platforms</h1>
                         <div className='mt-8'>
                             <h2 className='font-mattersq text-[14px] leading-[16.8px] tracking-[-0.12px] text-grey.600'>Streams needed</h2>
