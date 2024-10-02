@@ -10,7 +10,7 @@ interface IGoLiveCard {
 
 const GoLiveCard = ({ title, description, bgColor, bgImg }: IGoLiveCard) => {
     return (
-        <div className='md:w-[276px] w-[90%] mx-auto bg-grey.300 rounded-[16px] p-5'>
+        <div className='md:w-[276px] w-[90%] md:mx-0 mx-auto bg-grey.300 rounded-[16px] p-5'>
             <div className={`${bgColor} h-[181px] rounded-[12px] pt-5 pl-5`}>
                 <Image className='w-full h-full rounded-tl-[8px]' src={bgImg} alt="liveparte" />
             </div>

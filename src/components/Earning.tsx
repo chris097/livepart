@@ -38,10 +38,10 @@ const Earning = () => {
                     </div>
                     <div className='md:pr-44 relative md:mt-0 mt-10'>
                         <Image className='absolute top-0 z-40 md:-ml-24 -ml-10 md:h-[80px] md:w-[344px] w-[141px] h-[39.86px] bg-cover object-center' src={enage_comment1} alt='' />
-                        <Image className='absolute md:bottom-12 bottom-2 md:-ml-52 -ml-20 z-40 w-[171.14px] h-[22.13px]' src={enage_comment2} alt='' />
-                        <Image className='absolute md:top-32 top-10 pt-2 w-[174px] h-[33.23px] md:ml-32 ml-16 z-40' src={enage_comment3} alt='' />
+                        <Image className='absolute md:bottom-12 bottom-2 md:-ml-52 -ml-20 z-40 md:w-[344px] md:h-[54px] w-[171.14px] h-[22.13px]' src={enage_comment2} alt='' />
+                        <Image className='absolute md:top-32 top-10 pt-2 w-[174px] md:w-[288px] md:h-[55px] h-[33.23px] md:ml-32 ml-16 z-40' src={enage_comment3} alt='' />
 
-                        <Image className='relative w-[145.67px] z-30' src={liveparte} alt='' />
+                        <Image className='relative md:w-full w-[145.67px] z-30' src={liveparte} alt='' />
 
                     </div>
                 </div>
