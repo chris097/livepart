@@ -6,7 +6,7 @@ import mobile_e from '../../../public/images/mobile_view.png'
 const EntertainerBanner = () => {
     return (
         <>
-            <div className="text-white.200 h-[400px] mt-32 lg:w-full w-[95%]">
+            <div className="text-white.200 h-[400px] mt-32 lg:w-full w-[95%] mx-auto">
                 <div className="flex flex-col justify-center items-center h-full">
                     <h1 className="font-mdtest font-bold lg:text-[92px] lg:leading-[92px] text-center text-[69px] leading-[69px] tracking-[0.48px] uppercase">BRING THE SHOWS HOME</h1>
                     <p className="font-mattersq lg:text-[20px] text-[13px] leading-[28px] font-normal tracking-[-0.2px] lg:w-[45%] w-[95%] mt-3 text-center">Reach more fans with real-time broadcasts of incredible performances. Create immersive experiences, expand your revenue and unlock fan engagements.</p>
