@@ -15,7 +15,7 @@ interface IAccessCardProps {
 
 const AccessCard = ({ cardImg, commentImg, title, description, gradient, gradientColor, imgBgColor, commentWidth = "w-[160px]", hasComment }: IAccessCardProps) => {
   return (
-    <div className="bg-grey.100 lg:w-full w-[343px] h-[332px] rounded-[16px] p-4 mx-auto">
+    <div className="bg-grey.100 lg:w-full w-full h-[332px] rounded-[16px] p-4 mx-auto">
       <div className={`h-[181px] ${imgBgColor} rounded-[8px] relative p-3.5`}>
         <Image className="overflow-y-hidden h-full bg-cover object-cover rounded-[6px]" src={cardImg} alt="card1" />
         {gradient && <div className={`h-[45px] ${gradientColor} rounded-[6px] left-0 absolute w-full bottom-0`}></div>}
