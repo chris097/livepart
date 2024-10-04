@@ -10,7 +10,7 @@ import google from "../../public/images/google.png";
 
 const PayAnyhow = () => {
     return (
-        <div className="lg:w-[85%] w-[93%] relative mx-auto h-auto mt-24">
+        <div className="lg:w-[85%] w-[343px] relative mx-auto lg:h-auto h-[741px] mt-24">
             <div className='w-full h-full relative mx-auto'>
                 <svg className='w-full h-full lg:block hidden' viewBox="0 0 1200 498" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" clipRule="evenodd" d="M524.628 0C538.088 0 549 10.9117 549 24.3719C549 37.8322 559.912 48.7439 573.372 48.7439H629.628C643.088 48.7439 654 37.8322 654 24.3719C654 10.9117 664.912 0 678.372 0H1170C1186.57 0 1200 13.4315 1200 30V468C1200 484.569 1186.57 498 1170 498H673C656.431 498 643 484.569 643 468V312.715C643 296.146 629.569 282.715 613 282.715H588C571.431 282.715 558 296.146 558 312.714V468C558 484.569 544.569 498 528 498H30C13.4315 498 0 484.569 0 468V30C0 13.4315 13.4315 0 30 0H524.628Z" fill="#00A699" />

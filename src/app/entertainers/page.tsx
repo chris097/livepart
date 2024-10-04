@@ -58,7 +58,7 @@ const Entertainers = () => {
                     />
                 </div>
 
-                <div className='mt-32 md:w-[85%] w-[90%] relative mx-auto'>
+                <div className='mt-32 md:w-[85%] md:h-auto w-[343px] h-[802px] relative mx-auto'>
                     <div className='w-full h-full relative'>
                         <svg className='lg:block hidden' width="1200" height="498" viewBox="0 0 1200 498" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fillRule="evenodd" clipRule="evenodd" d="M549 30C549 13.4315 535.569 0 519 0H30C13.4315 0 0 13.4315 0 30V468C0 484.569 13.4315 498 30 498H519C535.569 498 549 484.569 549 468V273C549 256.431 562.431 243 579 243H619C635.569 243 649 256.431 649 273V468C649 484.569 662.431 498 679 498H1170C1186.57 498 1200 484.569 1200 468V30C1200 13.4315 1186.57 0 1170 0H684C667.431 0 654 13.4315 654 30V180C654 196.569 640.569 210 624 210H579C562.431 210 549 196.569 549 180V30ZM573 226.5C573 231.747 577.253 236 582.5 236H617.5C622.747 236 627 231.747 627 226.5C627 221.253 622.747 217 617.5 217H582.5C577.253 217 573 221.253 573 226.5Z" fill="#FE4365" />
@@ -67,7 +67,7 @@ const Entertainers = () => {
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 453.179C0.5 436.61 13.9315 423.179 30.5 423.179H122.5C139.069 423.179 152.5 409.747 152.5 393.179V356.565C152.5 339.997 139.069 326.565 122.5 326.565L30.5 326.566C13.9315 326.566 0.5 313.134 0.5 296.566L0.5 30C0.5 13.4315 13.9315 0 30.5 0H313.5C330.069 0 343.5 13.4315 343.5 30V296.565C343.5 313.134 330.069 326.565 313.5 326.565H215.5C198.931 326.565 185.5 339.997 185.5 356.565V393.179C185.5 409.747 198.931 423.179 215.5 423.179H313.5C330.069 423.179 343.5 436.61 343.5 453.179V772C343.5 788.569 330.069 802 313.5 802H30.5C13.9315 802 0.5 788.569 0.5 772L0.5 453.179ZM169 401.096C174.247 401.096 178.5 396.843 178.5 391.596V360.909C178.5 355.662 174.247 351.409 169 351.409C163.753 351.409 159.5 355.662 159.5 360.909V391.596C159.5 396.843 163.753 401.096 169 401.096Z" fill="#FE4365" />
                         </svg>
                         <div className='absolute h-full flex md:flex-row flex-col-reverse top-1.5 md:justify-between w-full'>
-                            <div className='flex-1'>
+                            <div className='flex-1 items-center '>
                                 <div className='md:px-12 py-7'>
                                     <h1 className='font-mdtest md:text-[62px] md:pl-0 pl-4 text-[42px] md:leading-[62px] leading-[42px] tracking-[0.48px] font-bold'>YOU’RE PROTECTED AGAINST FRAUD</h1>
                                     <p className='font-mattersq md:text-base text-[13px] md:pl-0 pl-4 font-[400] leading-[19.2px] tracking-[-0.12px] w-[90%] mt-4'>All live events are securely protected to reduce stream fraud and account sharing, ensuring that only paying fans get access.</p>
@@ -95,10 +95,19 @@ const Entertainers = () => {
 
                             </div>
                             <div className='flex-1 md:ml-20 h-full'>
-                                <div className='md:ml-5 ml-3 md:mr-10 mr-3 lg:mt-[17.5px] h-full'>
-                                    <Image className='bg-cover object-cover md:rounded-none rounded-[24px] md:h-auto md:w-auto md:pt-0 pt-2 h-[298px] w-[324px]' src={lock} alt="liveparte" />
+                                <div className='md:ml-5 ml-3 md:mr-10 mr-3 lg:mt-[17.5px] h-full lg:pt-0 pt-1'>
+                                    <Image
+                                        className='bg-cover object-cover md:rounded-none rounded-[24px] w-full lg:h-auto h-[307px]'
+                                        src={lock}
+                                        alt="liveparte"
+                                    />
                                 </div>
                             </div>
+                            {/* <div className='flex-1 md:ml-20 h-full'>
+                                <div className='md:ml-5 ml-3 md:mr-10 mr-3 lg:mt-[17.5px] h-full'>
+                                    <Image className='bg-cover object-cover md:rounded-none rounded-[24px] md:w-auto md:pt-0 h-[21.5rem] w-full' src={lock} alt="liveparte" />
+                                </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
